@@ -953,3 +953,54 @@ nav ul li a:hover::after {
     }
 
 }
+/* ================= MOBILE TECH STACK FIX ================= */
+
+@media (max-width: 768px) {
+
+    .tech-section {
+        width: 100%;
+        overflow: hidden;
+        padding: 60px 20px;
+        box-sizing: border-box;
+    }
+
+    .tech-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .tech-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        box-sizing: border-box;
+    }
+
+    .tech-section h2,
+    .tech-section .section-small {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+
+/* EXTRA FIX FOR HORIZONTAL SCROLL */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.tech-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
