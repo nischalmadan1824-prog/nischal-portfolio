@@ -1,0 +1,610 @@
+/* ================= PROJECTS HERO ================= */
+
+/* ================= PROJECT HERO ================= */
+
+.projects-hero {
+
+    min-height: 420px;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px 8% 80px;
+
+    overflow: hidden;
+
+}
+
+
+/* ================= BIG BACKGROUND TEXT ================= */
+
+.projects-hero::before {
+
+    content: "PROJECTS";
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-family: "Michroma", sans-serif;
+
+    font-size: clamp(80px, 16vw, 250px);
+
+    font-weight: 900;
+
+    letter-spacing: 15px;
+
+    color: rgba(139, 92, 246, 0.06);
+
+    white-space: nowrap;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+}
+
+
+/* ================= PURPLE GLOW ================= */
+
+.projects-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 350px;
+
+    background: #7c3aed;
+
+    filter: blur(160px);
+
+    opacity: 0.16;
+
+    top: 45%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 0;
+
+}
+
+
+/* ================= HERO CONTENT ================= */
+
+.projects-hero > * {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* ================= SMALL LABEL ================= */
+
+.projects-hero .section-small {
+
+    font-family: "Michroma", sans-serif;
+
+    font-size: 17px;
+    font-weight: bolder;
+
+    letter-spacing: 4px;
+
+    color: #8565e5;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* ================= TITLE ================= */
+
+.projects-hero h1 {
+
+    font-family: "Inter", sans-serif;
+
+    font-size: clamp(50px, 7vw, 95px);
+
+    font-weight: 800;
+
+    color: #ffffff;
+
+    margin: 0 0 20px;
+
+    line-height: 1.05;
+
+}
+
+
+/* ================= GRADIENT TEXT ================= */
+
+.projects-hero h1 span {
+
+    background: linear-gradient(
+        90deg,
+        #8b5cf6,
+        #6366f1,
+        #38bdf8
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+/* ================= DESCRIPTION ================= */
+
+.projects-intro {
+
+    max-width: 680px;
+
+    color: #efeff7;
+
+    font-size: 19px;
+
+    line-height: 2px;
+
+    margin: 0;
+
+}
+
+
+/* ================= DECORATIVE PROJECT NUMBERS ================= */
+
+.projects-hero .project-counter {
+
+    position: absolute;
+
+    bottom: 35px;
+
+    display: flex;
+
+    gap: 35px;
+
+    font-family: "Michroma", sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: rgba(255, 255, 255, 0.35);
+
+    z-index: 3;
+
+}
+
+
+.projects-hero .project-counter span {
+
+    transition: 0.3s ease;
+
+}
+
+
+.projects-hero .project-counter span:hover {
+
+    color: #a78bfa;
+
+}
+
+
+.projects-hero h1 {
+
+    font-family: Arial, sans-serif;
+
+    font-size: clamp(45px, 6vw, 80px);
+
+    color: white;
+
+    margin: 15px 0;
+
+}
+
+
+.projects-hero h1 span {
+
+    background: linear-gradient(
+        90deg,
+        #8b5cf6,
+        #3b82f6,
+        #22d3ee
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.projects-intro {
+
+    max-width: 650px;
+
+    color: #a9a9b5;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-top: 10px;
+
+}
+
+
+/* ================= PROJECTS SECTION ================= */
+
+.projects-section {
+
+    padding: 40px 8% 120px;
+    padding-bottom: 70px;
+
+}
+
+
+.projects-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 60px 40px;
+
+    max-width: 1300px;
+
+    margin: auto;
+
+}
+
+
+/* ================= PROJECT CARD ================= */
+
+.project-item {
+
+    transition: 0.4s ease;
+
+}
+
+
+/* ================= PROJECT IMAGE ================= */
+
+.project-image-link {
+
+    display: block;
+
+    text-decoration: none;
+
+}
+
+
+.project-image {
+
+    height: 360px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    border: 3px solid rgba(255, 255, 255, 0.1);
+
+    background: #0d0d18;
+
+    position: relative;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+
+}
+
+
+.project-image:hover {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(19, 48, 236, 0.7);
+
+    box-shadow:
+
+        0 20px 50px rgba(0, 0, 0, 0.5),
+
+        0 0 40px rgba(124, 58, 237, 0.15);
+
+}
+
+
+/* ================= PLACEHOLDER ================= */
+
+.project-placeholder {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.project-placeholder::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+
+    height: 300px;
+
+    background: #7c3aed;
+
+    filter: blur(130px);
+
+    opacity: 0.2;
+
+}
+
+
+.project-placeholder span {
+
+    font-family: "Michroma", sans-serif;
+
+    font-size: clamp(70px, 10vw, 130px);
+
+    font-weight: 900;
+
+    color: rgba(139, 92, 246, 0.15);
+
+    z-index: 1;
+
+}
+
+
+.project-placeholder p {
+
+    font-family: "Michroma", sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #ea980c;
+
+    z-index: 1;
+
+}
+
+
+/* ================= PROJECT INFO ================= */
+
+.project-info {
+
+    padding-top: 25px;
+
+}
+
+
+.project-number {
+
+    font-family: "Michroma", sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #8b5cf6;
+
+}
+
+
+.project-info h2 {
+
+    color: rgb(10, 239, 235);
+
+    font-size: 30px;
+
+    margin: 12px 0;
+
+}
+
+
+.project-info > p {
+
+    color: #efe8e8;
+
+    line-height: 1.7;
+
+    max-width: 500px;
+
+}
+
+
+/* ================= PROJECT TAGS ================= */
+
+.project-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+.project-tags span {
+
+    padding: 8px 14px;
+
+    border-radius: 50px;
+
+    font-size: 12px;
+
+    color: #c4b5fd;
+
+    border: 2px solid rgb(6, 189, 235);
+
+    background: rgba(124, 58, 237, 0.08);
+
+}
+
+
+/* ================= CTA ================= */
+
+.projects-cta {
+
+    padding: 10px 20px 120px;
+    padding-bottom: 60px;
+
+
+}
+
+
+.projects-cta-box {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 80px 30px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            rgba(124, 58, 237, 0.12),
+            transparent 60%
+        );
+
+}
+
+
+.projects-cta-box > p:first-child {
+
+    color: #8b5cf6;
+
+    font-family: "Michroma", sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.projects-cta-box h2 {
+
+    color: white;
+
+    font-size: clamp(30px, 4vw, 55px);
+
+    margin: 20px 0;
+
+}
+
+
+.projects-cta-box h2 span {
+
+    color: #8b5cf6;
+
+}
+
+
+.projects-cta-text {
+
+    color: #999;
+
+    font-size: 16px;
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .projects-hero {
+
+        min-height: 350px;
+
+        padding: 100px 7% 40px;
+
+    }
+
+
+    .projects-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+
+    .projects-section {
+
+        padding: 40px 7% 80px;
+
+    }
+
+
+    .project-image {
+
+        height: 280px;
+
+    }
+
+
+    .projects-cta {
+
+        padding: 20px 7% 80px;
+
+    }
+
+
+    .projects-cta-box {
+
+        padding: 60px 20px;
+
+    }
+
+}
